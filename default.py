@@ -20,10 +20,10 @@ import shutil
 from t0mm0.common.addon import Addon
 from metahandler import metahandlers
 
-addon_id = 'plugin.video.i4atv'
+addon_id = 'plugin.video.stalker'
 selfAddon = xbmcaddon.Addon(id=addon_id)
 addon = Addon(addon_id, sys.argv)
-ADDON2=xbmcaddon.Addon(id='plugin.video.i4atv')
+ADDON2=xbmcaddon.Addon(id='plugin.video.stalker')
 fanart = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
 iconlm = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'iconlm.png'))
 iconhdm = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'iconhdm.png'))
@@ -53,16 +53,16 @@ user = selfAddon.getSetting('username')
 passw = selfAddon.getSetting('password')
 
 if user == '' or passw == '':
-	dialog.ok(addon_id, 'Please be aware that you will get authorization errors if you do remember to open context/settings menu on live i4atv and clear cache then reload if it dont work repeat the process. Please consider making donations to keep this addon alive and you can find the donation link in the settings of this addon. Thank You.')
-	dialog.ok(addon_id, 'For the i4atv extra part of the i4atv addon all credit should be given to mettlekettle as this is a clone of uktvnow which is intergrated with this addon. Thank You!')
-	ret = dialog.yesno('I4ATV EXTRA', 'Please enter inside4ndroid for both','','','Cancel','Login')
+	dialog.ok(addon_id, 
+	dialog.ok(addon_id, 
+	ret = dialog.yesno
 	if ret == 1:
-		keyb = xbmc.Keyboard('', 'Enter Username')
+		keyb = xbmc.Keyboard('' ')
 		keyb.doModal()
 		if (keyb.isConfirmed()):
 			search = keyb.getText()
 			username=search
-			keyb = xbmc.Keyboard('', 'Enter Password:')
+			keyb = xbmc.Keyboard('', '')
 			keyb.doModal()
 			if (keyb.isConfirmed()):
 				search = keyb.getText()
@@ -72,25 +72,25 @@ if user == '' or passw == '':
 	else:quit()
 
 def Main():
-	addDir('[COLOR yellow]          *** Welcome to I4ATV ***[/COLOR]','',0,icon,'',fanart)
-	addDir('[COLOR yellow]*** Please Select An Option Below ***[/COLOR]','',0,icon,'',fanart)
-	addDir('[COLOR yellow]                                                 [/COLOR]','',0,icon,'',fanart)
-	addDir('[COLOR green]IVUE INTERGRATION - LIVE I4ATV ONLY[/COLOR]','0',3,icon,'',fanart)
-	addDir('[COLOR red]Live I4ATV EXTRA[/COLOR]','0',1,icon,'',fanart)
-	xbmc.executebuiltin('Container.SetViewMode(50)')
+	addDir(
+	addDir(
+	addDir(                                                 
+	addDir(
+	addDir(
+	xbmc.executebuiltin('')
 
 def Ivue():
 	if not os.path.exists(directory):
-		dialog.ok(addon_id, 'Please makesure you have ivue tv guide installed and you have run it at least once then use this function to enable integration')
+		dialog.ok(addon_id, '
 		dialog.notification(addonname, 'please install and run ivue tv guide at least once', xbmcgui.NOTIFICATION_ERROR );
 	
 	if os.path.exists(directory):
 		addonsini = urllib.URLopener()
-		addonsini.retrieve("https://raw.githubusercontent.com/Inside4ndroid/kodi-15/master/fixer_files/addons.ini", destinaddons)
+		addonsini.retrieve destinaddons)
 		addonsini = urllib.URLopener()
-		addonsini.retrieve("https://raw.githubusercontent.com/Inside4ndroid/kodi-15/master/fixer_files/settings.xml", destinsets)
-		addDir('[COLOR yellow]*** All Done Now Go Back ***[/COLOR]','0',0,icon,'',fanart)
-	xbmc.executebuiltin('Container.SetViewMode(50)')
+		addonsini.retrieve(", destinsets)
+		addDir(' '',fanart)
+	xbmc.executebuiltin('')
   
 def GetContent():
 	user = selfAddon.getSetting('username')

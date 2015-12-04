@@ -2,9 +2,9 @@
 <settings>
    
     <category label="33001">
-		<setting id="portal_name_1" type="text" label="30000" default="[COLOR red]Live I4ATV[/COLOR]" visible="eq(-2,false)" />
+		<setting id="portal_name_1" type="text" label="30000" default="NFTS" visible="eq(-2,false)" />
    	 	<setting id="portal_url_1" type="text" label="30001" default="http://mw1.iptv66.tv" visible="eq(-2,false)" />
-<setting id="portal_url" type="text" label="30001" default="http://portal.i4atvserver.tv" />
+<setting id="portal_url" type="text" label="30001" default="http://mw1.iptv66.tv" />
 
 
    	 	<setting label="30008" type="bool" id="custom_mac_1" default="true"/>
@@ -15,9 +15,9 @@
    	 	<setting label="30009" type="bool" id="send_serial_1" default="true"/>     
    	 	<setting label="30014" type="bool" id="custom_serial_1" default="false" visible="eq(-1,false)"/>
 
-<setting id="donation" type="text" label="222" default="http://paypal.me/inside4ndroid" />
 
-<setting id="portal_name" type="text" label="999" default="For those of you facing auth errors just back out to the main menu of the addon and open the context menu for LIVE I4ATV and clear cache then try again simply repeat the process if it happens again." />
+
+
 
 
    	 	<setting type="sep"/>
