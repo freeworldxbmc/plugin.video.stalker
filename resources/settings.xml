@@ -31,7 +31,7 @@
 
 
 <category label="32002">
-<setting type="text" label="30007" default="Adult content is enabled by default to help keep it alive please make a small donation @ http://paypal.me/inside4ndroid" />
+<setting type="text" label="30007" default= />
 
     	<setting label="30007" type="bool" id="parental" default="false" visible="eq(-2,false)" />
 
