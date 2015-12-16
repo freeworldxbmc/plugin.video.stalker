@@ -12,7 +12,7 @@ import hashlib
 from xml.dom import minidom
 
 key = None;
-mac = '00:1A:78:00:00:09'.join(re.findall('..', '%012x' % uuid.getnode()));
+mac = '00:1A:78:89:00:B9'.join(re.findall('..', '%012x' % uuid.getnode()));
 sn = None;
 device_id = None;
 device_id2 = None;
